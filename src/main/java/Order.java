@@ -9,7 +9,7 @@ public record Order(
         List<Product> products,
         OrderStatus status
 ) {
-@With
+
     public Order withStatus(OrderStatus status) {
         return new Order(this.id, this.products, this.status);
     }
