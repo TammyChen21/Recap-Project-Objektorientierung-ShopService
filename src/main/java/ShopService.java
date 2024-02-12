@@ -47,6 +47,7 @@ public class ShopService {
                 .orElse(null);
     }
 }
+
     /*public Order addOrder(List<String> productIds) throws ProductNotFoundException {
         List<Product> products = new ArrayList<>();
         for (String productId : productIds) {
