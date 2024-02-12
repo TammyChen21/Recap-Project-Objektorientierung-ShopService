@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public interface OrderRepo {
@@ -9,4 +10,5 @@ public interface OrderRepo {
     Order addOrder(Order newOrder);
 
     void removeOrder(String id);
+    ArrayList<Order> getAllOrders();
 }
