@@ -15,7 +15,7 @@ public class ShopService {
         for (String productId : productIds) {
             Optional<Product> optionalProduct= productRepo.getProductById(productId);
             if (optionalProduct.isEmpty()) {
-                System.out.println("Product mit der Id: " + productId + " konnte nicht bestellt werden!");
+                throw new ProductNotFoundException("Product mit der Id: " + productId + " konnte nicht bestellt werden!");
                 return null;
             }
             products.add(optionalProduct.get());
